@@ -1,0 +1,32 @@
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{ 
+  int length = 0;
+  int *Arr=NULL;
+  
+  printf("enter the number of elements: \n");
+  scanf("%d",&length);
+
+  Arr=(int *)malloc(length*sizeof(int));
+
+ //step 1 :alloacte the memory
+  if(Arr == NULL)
+  {
+    printf("Unable to allocate memory\n");
+  }
+ else 
+ {
+    printf("Memory gets succesfully allocated\n");
+ }
+
+ //step2:Use the Memory 
+ //(logic)
+
+ //step3:Free the memory
+ free(Arr);
+
+    return 0;
+}
